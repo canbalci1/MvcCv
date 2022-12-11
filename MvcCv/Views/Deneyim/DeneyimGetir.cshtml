@@ -1,0 +1,52 @@
+﻿@model MvcCv.Models.Entitiy.TblDeneyimlerim
+@{
+    ViewBag.Title = "DeneyimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2> Deneyim Güncelleme Sayfası</h2>
+
+    <form method="post">
+        @Html.Label("Deneyim ID")
+        @Html.TextBoxFor(x => x.ID, new {@class="form-control"})
+        <br />
+        @Html.Label("Başlık")
+        @Html.TextBoxFor(x => x.Baslik, new{@class= "form-control" })
+        <br />
+        @Html.Label("Alt Başlık")
+        @Html.TextBoxFor(x=> x.AltBaslik, new {@class= "form-control" })
+        <br />
+        @Html.Label("Tarih")
+        @Html.TextBoxFor(x => x.Tarih, new {@class= "form-control" })
+        <br />
+        @Html.Label("Açıklama")
+        @Html.TextAreaFor(x =>x.Aciklama, new {@class= "form-control" })
+        <br />
+    <button class="btn btn-info">Güncelle</button>
+
+        </form>
+   
+@* input kullanımı
+ 
+    @*<form method="post">
+        <label>ID = @Model.ID</label>
+        <br />
+        <label>Başlık</label>
+        <input type="text" value="@Model.Baslik" name="Baslik" class="form-control" placeholder="Baslik Yazınız" />
+        <br />
+        <label>Alt Başlık</label>
+        <input type="text" value="@Model.AltBaslik" name="AltBaslik" class="form-control" placeholder="Alt Baslik Yazınız" />
+        <br />
+        <label>Tarih</label>
+        <input type="text" name="Tarih" value="@Model.Tarih" class="form-control" placeholder="Çalışma Tarihniz" />
+        <br />
+        <label>Açıklama</label>
+        <textarea name="Aciklama" value="@Model.Aciklama" class="form-control" placeholder="Açıklama Giriniz" rows="3">
+    @Model.Aciklama
+    </textarea>
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+    </form>*@
+
+
