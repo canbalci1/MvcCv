@@ -1,0 +1,49 @@
+﻿@model MvcCv.Models.Entitiy.TblAdmin
+
+@{
+    ViewBag.Title = "AdminDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2> Şifre Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.Label("Admin ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.KullaniciAdi, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şifre")
+    @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+
+</form>
+
+@* input kullanımı
+
+    @*<form method="post">
+        <label>ID = @Model.ID</label>
+        <br />
+        <label>Başlık</label>
+        <input type="text" value="@Model.Baslik" name="Baslik" class="form-control" placeholder="Baslik Yazınız" />
+        <br />
+        <label>Alt Başlık</label>
+        <input type="text" value="@Model.AltBaslik" name="AltBaslik" class="form-control" placeholder="Alt Baslik Yazınız" />
+        <br />
+        <label>Tarih</label>
+        <input type="text" name="Tarih" value="@Model.Tarih" class="form-control" placeholder="Çalışma Tarihniz" />
+        <br />
+        <label>Açıklama</label>
+        <textarea name="Aciklama" value="@Model.Aciklama" class="form-control" placeholder="Açıklama Giriniz" rows="3">
+    @Model.Aciklama
+    </textarea>
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+    </form>*@
+
+
+
+

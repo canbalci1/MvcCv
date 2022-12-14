@@ -80,7 +80,7 @@
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Ad" Type="varchar" MaxLength="30" />
-          <Property Name="Link" Type="varchar" MaxLength="50" />
+          <Property Name="Link" Type="varchar" MaxLength="100" />
           <Property Name="ikon" Type="varchar" MaxLength="30" />
           <Property Name="Durum" Type="bit" />
         </EntityType>
@@ -201,7 +201,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="ikon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Durum" Type="Boolean" />
         </EntityType>
