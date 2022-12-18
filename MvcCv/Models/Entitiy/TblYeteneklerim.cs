@@ -11,11 +11,15 @@ namespace MvcCv.Models.Entitiy
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblYeteneklerim
     {
         public int ID { get; set; }
+        [Required]
         public string Yetenek { get; set; }
+        [Required]
+
         public Nullable<byte> Oran { get; set; }
     }
 }

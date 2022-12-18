@@ -11,9 +11,12 @@
 <form method="post">
     @Html.Label("Hobi")
     @Html.TextBoxFor(x => x.Aciklama1, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Aciklama1, "Bu alanı boş geçemezsiniz", new { @style = "color:red" })
     <br />
     @Html.Label("Açıklama")
     @Html.TextAreaFor(x => x.Aciklama2, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Aciklama2, "Bu alanı boş geçemezsiniz", new { @style = "color:red" })
+
     <br />
     <button class="btn btn-info">Kaydet</button>
 

@@ -11,11 +11,15 @@ namespace MvcCv.Models.Entitiy
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblHobilerim
     {
         public int ID { get; set; }
+        [Required]
         public string Aciklama1 { get; set; }
+        [Required]
+
         public string Aciklama2 { get; set; }
     }
 }

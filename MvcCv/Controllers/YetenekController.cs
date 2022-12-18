@@ -25,6 +25,11 @@ namespace MvcCv.Controllers
         [HttpPost]
         public ActionResult YeniYetenek(TblYeteneklerim p)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View("YeniYetenek");
+            }
             repo.TAdd(p);
             return RedirectToAction("Index");
         }

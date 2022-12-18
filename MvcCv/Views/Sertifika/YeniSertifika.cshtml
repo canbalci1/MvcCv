@@ -10,9 +10,13 @@
 <form method="post">
     @Html.Label("Sertifika Açıklaması")
     @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Aciklama, "Bu alanı boş geçemezsiniz", new { @style = "color:red" })
+
     <br />
     @Html.Label("Tarih")
     @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Tarih, "Bu alanı boş geçemezsiniz", new { @style = "color:red" })
+
     <br />
     <button class="btn btn-success">Kaydet</button>
 

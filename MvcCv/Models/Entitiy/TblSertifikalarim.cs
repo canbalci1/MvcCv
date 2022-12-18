@@ -11,11 +11,15 @@ namespace MvcCv.Models.Entitiy
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblSertifikalarim
     {
         public int ID { get; set; }
+        [Required]
         public string Aciklama { get; set; }
+        [Required]
+
         public string Tarih { get; set; }
     }
 }

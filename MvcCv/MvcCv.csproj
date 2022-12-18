@@ -238,6 +238,7 @@
     <Content Include="AdminLTE-3.0.4\dist\img\boxed-bg.jpg" />
     <Content Include="AdminLTE-3.0.4\dist\img\boxed-bg.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\american-express.png" />
+    <Content Include="AdminLTE-3.0.4\dist\img\credit\c-sharp.svg" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\cirrus.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\mastercard.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\mestro.png" />
@@ -245,6 +246,7 @@
     <Content Include="AdminLTE-3.0.4\dist\img\credit\paypal2.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\visa.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\default-150x150.png" />
+    <Content Include="AdminLTE-3.0.4\dist\img\gowebside.jpg" />
     <Content Include="AdminLTE-3.0.4\dist\img\icons.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\photo1.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\photo2.png" />

@@ -41,6 +41,10 @@ namespace MvcCv.Controllers
         [HttpPost]
         public ActionResult YeniSertifika(TblSertifikalarim p)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("YeniSertifika");
+            }
             repo.TAdd(p);
             return RedirectToAction("Index");
         }

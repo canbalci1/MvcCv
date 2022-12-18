@@ -11,13 +11,16 @@ namespace MvcCv.Models.Entitiy
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblEgitimlerim
     {
         public int ID { get; set; }
+        [Required]
         public string Baslik { get; set; }
         public string AltBaslik { get; set; }
         public string AltBaslik2 { get; set; }
+        [Required]
         public string GNO { get; set; }
         public string Tarih { get; set; }
     }

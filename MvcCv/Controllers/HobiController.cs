@@ -25,6 +25,10 @@ namespace MvcCv.Controllers
         [HttpPost]
         public ActionResult HobiEkle(TblHobilerim t)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("HobiEkle");
+            }
             repo.TAdd(t);
             return RedirectToAction("Index");
         }
